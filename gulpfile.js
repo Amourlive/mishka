@@ -40,7 +40,7 @@ lazyRequireTask('lint', './tasks/lint.js', {
 });
 
 lazyRequireTask('inlineSvgToHtml', './tasks/inlineSvgToHtml.js', {
-    src: 'frontend/index.html'
+    src: 'frontend/**/*.html'
 });
 
 gulp.task('watch',function () {
