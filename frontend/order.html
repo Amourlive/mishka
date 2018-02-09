@@ -14,15 +14,84 @@
     <section class="page-main_item filter">
         <h2 class="filter-title visually-hidden">Order form</h2>
         <form class="filter-form">
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">Type</legend>
+            <fieldset class="filter-field type">
+                <legend class="type-title">Type</legend>
+                <ul class="radio-list">
+                    <li class="radio-list_item">
+                        <input class="radio_input visually-hidden" type="radio" name="type" value="accessory" id="accessory">
+                        <label class="radio_label" for="accessory">Accessories for interior</label>
+                    </li>
+                    <li class="radio-list_item">
+                        <input class="radio_input visually-hidden" type="radio" name="type" value="toy" id="toy">
+                        <label class="radio_label" for="toy">Children's toy</label>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset class="filter-field">
                 <legend class="filter-field_title">Color</legend>
+                <ul class="checkbox-list">
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="white" id="filter-1" checked>
+                        <label class="checkbox_label" for="filter-1">White</label>
+                    </li>
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="gray" id="filter-2" checked>
+                        <label class="checkbox_label" for="filter-2">Gray</label>
+                    </li>
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="tiffany" id="filter-3">
+                        <label class="checkbox_label" for="filter-3">Tiffany</label>
+                    </li>
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="black" id="filter-4">
+                        <label class="checkbox_label" for="filter-4">Black</label>
+                    </li>
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="pink" id="filter-5">
+                        <label class="checkbox_label" for="filter-5">Pink</label>
+                    </li>
+                    <li class="checkbox-list_item">
+                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="orange" id="filter-6">
+                        <label class="checkbox_label" for="filter-6">orange</label>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset class="filter-field">
                 <legend class="filter-field_title">Full name</legend>
+                <ul class="name-list">
+                    <li class="name-list_item">
+                        <label class="name_label" for="name-1">Name:</label>
+                        <input class="name_input" type="text" name="name" id="name-1" checked>
+                    </li>
+                    <li class="name-list_item">
+                        <label class="name_label" for="name-2">Surname:</label>
+                        <input class="name_input" type="text" name="surname" id="name-2" checked>
+                    </li>
+                    <li class="name-list_item">
+                        <label class="name_label" for="name-3">Patronymic:</label>
+                        <input class="name_input" type="text" name="patronymic" id="name-3">
+                    </li>
+                </ul>
             </fieldset>
+            <fieldset class="filter-field">
+                <legend class="filter-field_title">Phone</legend>
+                <label class="filter-field_label visually-hidden" for="tel">Phone:</label>
+                <input class="filter-field_input" type="tel" name="patronymic" id="tel">
+            </fieldset>
+            <fieldset class="filter-field">
+                <legend class="filter-field_title">E-mail</legend>
+                <label class="filter-field_label visually-hidden" for="email">E-mail:</label>
+                <input class="filter-field_input" type="email" name="patronymic" id="email">
+            </fieldset>
+            <fieldset class="filter-field">
+                <legend class="filter-field_title">Additional</legend>
+                <label class="filter-field_label visually-hidden" for="additional">Additional:</label>
+                <input class="filter-field_input" type="text" name="patronymic" id="additional">
+            </fieldset>
+            <div class="filter__wrapper">
+                <p class="filter__description">* Fields are required</p>
+                <button class="filter__button button" type="submit">Send an order</button>
+            </div>
         </form>
     </section>
 </main>
