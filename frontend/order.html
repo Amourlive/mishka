@@ -6,91 +6,91 @@
 </head>
 <body>
 @@include('page/header.html')
-<main class="page-main">
-    <div class="page-main_title-wrapper">
-        <h1 class="page-main_title">Custom-made knitting</h1>
+<main class="page-main main">
+    <div class="main-item wrapper">
+        <h1 class="main-title">Custom-made knitting</h1>
     </div>
-    <p class="page-main_description">We will be happy to implement your wishes! Fill out the simple order form and we will contact you to clarify the details.</p>
-    <section class="page-main_item filter">
+    <p class="main_description">We will be happy to implement your wishes! Fill out the simple order form and we will contact you to clarify the details.</p>
+    <section class="main-item filter">
         <h2 class="filter-title visually-hidden">Order form</h2>
         <form class="filter-form">
-            <fieldset class="filter-field type">
-                <legend class="type-title">Type</legend>
+            <fieldset class="filter-field radio">
+                <legend class="radio-title">Type</legend>
                 <ul class="radio-list">
-                    <li class="radio-list_item">
-                        <input class="radio_input visually-hidden" type="radio" name="type" value="accessory" id="accessory">
-                        <label class="radio_label" for="accessory">Accessories for interior</label>
+                    <li class="radio-item">
+                        <input class="radio-input visually-hidden" type="radio" name="type" value="accessory" id="accessory">
+                        <label class="radio-label" for="accessory">Accessories for interior</label>
                     </li>
-                    <li class="radio-list_item">
-                        <input class="radio_input visually-hidden" type="radio" name="type" value="toy" id="toy">
-                        <label class="radio_label" for="toy">Children's toy</label>
+                    <li class="radio-item">
+                        <input class="radio-input visually-hidden" type="radio" name="type" value="toy" id="toy">
+                        <label class="radio-label" for="toy">Children's toy</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">Color</legend>
+            <fieldset class="filter-field checkbox">
+                <legend class="checkbox-title">Color</legend>
                 <ul class="checkbox-list">
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="white" id="filter-1" checked>
-                        <label class="checkbox_label" for="filter-1">White</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="white" id="filter-1" checked>
+                        <label class="checkbox-label" for="filter-1">White</label>
                     </li>
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="gray" id="filter-2" checked>
-                        <label class="checkbox_label" for="filter-2">Gray</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="gray" id="filter-2" checked>
+                        <label class="checkbox-label" for="filter-2">Gray</label>
                     </li>
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="tiffany" id="filter-3">
-                        <label class="checkbox_label" for="filter-3">Tiffany</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="tiffany" id="filter-3">
+                        <label class="checkbox-label" for="filter-3">Tiffany</label>
                     </li>
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="black" id="filter-4">
-                        <label class="checkbox_label" for="filter-4">Black</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="black" id="filter-4">
+                        <label class="checkbox-label" for="filter-4">Black</label>
                     </li>
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="pink" id="filter-5">
-                        <label class="checkbox_label" for="filter-5">Pink</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="pink" id="filter-5">
+                        <label class="checkbox-label" for="filter-5">Pink</label>
                     </li>
-                    <li class="checkbox-list_item">
-                        <input class="checkbox_input visually-hidden" type="checkbox" name="color" value="orange" id="filter-6">
-                        <label class="checkbox_label" for="filter-6">orange</label>
+                    <li class="checkbox-item">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="color" value="orange" id="filter-6">
+                        <label class="checkbox-label" for="filter-6">orange</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">Full name</legend>
+            <fieldset class="filter-field name">
+                <legend class="name-title">Full name</legend>
                 <ul class="name-list">
-                    <li class="name-list_item">
-                        <label class="name_label" for="name-1">Name:</label>
-                        <input class="name_input" type="text" name="name" id="name-1" checked>
+                    <li class="name-item">
+                        <label class="name-label" for="name-1">Name:</label>
+                        <input class="name-input" type="text" name="name" id="name-1" checked>
                     </li>
-                    <li class="name-list_item">
-                        <label class="name_label" for="name-2">Surname:</label>
-                        <input class="name_input" type="text" name="surname" id="name-2" checked>
+                    <li class="name-item">
+                        <label class="name-label" for="name-2">Surname:</label>
+                        <input class="name-input" type="text" name="surname" id="name-2" checked>
                     </li>
-                    <li class="name-list_item">
-                        <label class="name_label" for="name-3">Patronymic:</label>
-                        <input class="name_input" type="text" name="patronymic" id="name-3">
+                    <li class="name-item">
+                        <label class="name-label" for="name-3">Patronymic:</label>
+                        <input class="name-input" type="text" name="patronymic" id="name-3">
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">Phone</legend>
-                <label class="filter-field_label visually-hidden" for="tel">Phone:</label>
-                <input class="filter-field_input" type="tel" name="patronymic" id="tel">
+            <fieldset class="filter-field phone">
+                <legend class="phone-title">Phone</legend>
+                <label class="phone-label visually-hidden" for="tel">Phone:</label>
+                <input class="phone-input" type="tel" name="patronymic" id="tel">
             </fieldset>
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">E-mail</legend>
-                <label class="filter-field_label visually-hidden" for="email">E-mail:</label>
-                <input class="filter-field_input" type="email" name="patronymic" id="email">
+            <fieldset class="filter-field mail">
+                <legend class="mail-title">E-mail</legend>
+                <label class="mail-label visually-hidden" for="email">E-mail:</label>
+                <input class="mail-input" type="email" name="patronymic" id="email">
             </fieldset>
-            <fieldset class="filter-field">
-                <legend class="filter-field_title">Additional</legend>
-                <label class="filter-field_label visually-hidden" for="additional">Additional:</label>
-                <input class="filter-field_input" type="text" name="patronymic" id="additional">
+            <fieldset class="filter-field add extra">
+                <legend class="extra-title">Additional</legend>
+                <label class="extra-label visually-hidden" for="additional">Additional:</label>
+                <input class="extra-input" type="text" name="patronymic" id="additional">
             </fieldset>
-            <div class="filter__wrapper">
-                <p class="filter__description">* Fields are required</p>
-                <button class="filter__button button" type="submit">Send an order</button>
+            <div class="filter-item wrapper">
+                <p class="filter-description">* Fields are required</p>
+                <button class="filter-submit button" type="submit">Send an order</button>
             </div>
         </form>
     </section>
