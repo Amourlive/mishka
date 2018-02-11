@@ -49,7 +49,6 @@ lazyRequireTask('inlineSvgToHtml', './tasks/inlineSvgToHtml.js', {
 
 gulp.task('watch',function () {
     gulp.watch('frontend/styles/**/*.*',['styles']);
-    gulp.watch('frontend/assets/**/*.*', ['assets']);
     gulp.watch('frontend/styles/**/*.{png,jpg,svg}', ['styles:assets']);
     gulp.watch('frontend/styles/**/*.{png,jpg}', ['webp']);
     gulp.watch('frontend/styles/**/icon-*.svg', ['styles:svg']);
@@ -62,7 +61,7 @@ gulp.task('dev', function (callback) {
 });
 
 gulp.task('build', function (callback) {
-    run('clean', 'styles:svg', ['inlineSvgToHtml', 'styles', 'styles:assets', 'assets'], callback);
+    run('clean', 'styles:svg', ['inlineSvgToHtml', 'styles', 'styles:assets', 'webp'], callback);
 });
 
 gulp.task('default', ['build']);
