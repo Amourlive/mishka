@@ -7,12 +7,12 @@ const imagemin = require('gulp-imagemin');
 module.exports = function (options) {
     return function () {
         return gulp.src(options.src)
-            .pipe(newer('public/styles'))
+            .pipe(newer('public/assets'))
             .pipe(imagemin([
                 imagemin.optipng({optimizationLevel: 3}),
                 imagemin.jpegtran({progressive: true}),
                 imagemin.svgo()
             ]))
-            .pipe(gulp.dest('public/styles'))
+            .pipe(gulp.dest('public/assets'))
         };
 };
