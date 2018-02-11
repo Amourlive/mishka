@@ -16,7 +16,6 @@ const media = require('postcss-custom-media');
 const minmax = require('postcss-media-minmax');
 const selectors = require("postcss-custom-selectors");
 const nesting = require('postcss-nesting');
-const nested = require('postcss-nested');
 const inlineSvgCss = require('postcss-inline-svg');
 const url = require("postcss-url");
 
@@ -32,7 +31,6 @@ module.exports = function(options) {
     ,minmax()
     ,selectors()
     ,nesting()
-    ,nested()
     ,inlineSvgCss()
     ,url()];
     return function () {
