@@ -3,7 +3,6 @@
 const gulp = require("gulp");
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
 
 module.exports = function (options) {
     return function () {
@@ -11,10 +10,9 @@ module.exports = function (options) {
             .pipe(newer('public/styles'))
             .pipe(imagemin([
                 imagemin.optipng({optimizationLevel: 3}),
-                imagemin.jpegtran({progressive: true})
+                imagemin.jpegtran({progressive: true}),
+                imagemin.svgo()
             ]))
-            .pipe(gulp.dest('public/styles'))
-            .pipe(webp({quality: 90}))
             .pipe(gulp.dest('public/styles'))
         };
 };
