@@ -1,6 +1,6 @@
 #Css use postCss plugins.
-Plug list:
-    1.postcss-custom-properties
+1.postcss-custom-properties
+
         Using this input.css:
         :root {
           --color: red;
@@ -12,10 +12,12 @@ Plug list:
         div {
           color: red;
         }
-    2.postcss-import
+2.postcss-import
+
         Using:
         @import "cssrecipes-defaults";
-    3.postcss-focus
+3.postcss-focus
+
         Using this input.css:
         .button:hover {
             background: red;
@@ -24,7 +26,9 @@ Plug list:
         .button:hover, .button:focus {
             background: red;
         }
-    4.postcss-custom-media
+        
+4.postcss-custom-media
+
         Using this input.css:
         @custom-media --small-viewport (max-width: 30em);
         @media (--small-viewport) {
@@ -34,7 +38,8 @@ Plug list:
         @media (max-width: 30em) {
           /* styles for small viewport */
         }
-    5.postcss-media-minmax
+5.postcss-media-minmax
+
         Using this input.css:
         @media screen and (width >= 500px) and (width <= 1200px) {
           .bar {
@@ -59,8 +64,9 @@ Plug list:
             display: block;
           }
         }
-    6.postcss-custom-selectors
-        input:
+6.postcss-custom-selectors
+
+        Using this input.css:
         @custom-selector :--heading h1, h2, h3, h4, h5, h6;
         article :--heading + p {
           margin-top: 0;
@@ -74,7 +80,9 @@ Plug list:
         article h6 + p {
           margin-top: 0;
         }
-    7.postcss-nesting
+7.postcss-nesting
+
+        Using this input.css:
         a, b {
           color: red;
           & c, & d {
@@ -88,5 +96,6 @@ Plug list:
         a c, a d, b c, b d {
           color: white;
         }
-    9.const inlineSvgCss = require('postcss-inline-svg');
-    10.const url = require("postcss-url");
+9.const inlineSvgCss = require('postcss-inline-svg');
+
+10.const url = require("postcss-url");
