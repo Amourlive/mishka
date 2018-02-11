@@ -1,6 +1,6 @@
 {
   "name": "mishka",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Project \"Mishka\". Developed responsive web page.",
   "main": "index.html",
   "scripts": {
@@ -40,7 +40,6 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
-    "normalize.css": "^8.0.0",
     "path": "^0.12.7",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
@@ -50,6 +49,7 @@
     "postcss-inline-svg": "^3.0.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nesting": "^4.2.1",
+    "postcss-normalize": "^4.0.0",
     "postcss-url": "^7.3.0",
     "run-sequence": "^2.2.1",
     "stream-combiner2": "^1.1.1",

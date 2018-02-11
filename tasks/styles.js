@@ -32,7 +32,8 @@ module.exports = function(options) {
     ,selectors()
     ,nesting()
     ,inlineSvgCss()
-    ,url()];
+    ,url()
+    ,require('postcss-normalize')];
     return function () {
         return gulp.src(options.src)
             .pipe(plumber({
