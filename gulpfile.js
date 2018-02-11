@@ -24,6 +24,10 @@ lazyRequireTask('assets', './tasks/assets.js', {
 });
 
 lazyRequireTask('styles:assets', './tasks/styles_assets.js', {
+    src: 'frontend/assets/**/*.{png,jpg,svg}'
+});
+
+lazyRequireTask('webp', './tasks/webp.js', {
     src: 'frontend/assets/**/*.{png,jpg}'
 });
 
@@ -46,7 +50,8 @@ lazyRequireTask('inlineSvgToHtml', './tasks/inlineSvgToHtml.js', {
 gulp.task('watch',function () {
     gulp.watch('frontend/styles/**/*.*',['styles']);
     gulp.watch('frontend/assets/**/*.*', ['assets']);
-    gulp.watch('frontend/styles/**/*.{png,jpg}', ['styles:assets']);
+    gulp.watch('frontend/styles/**/*.{png,jpg,svg}', ['styles:assets']);
+    gulp.watch('frontend/styles/**/*.{png,jpg}', ['webp']);
     gulp.watch('frontend/styles/**/icon-*.svg', ['styles:svg']);
     gulp.watch('public/styles/**/sprite.svg', ['inlineSvgToHtml']);
     gulp.watch('frontend/**/*.html', ['inlineSvgToHtml']);
