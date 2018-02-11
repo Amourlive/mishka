@@ -40,6 +40,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
+    "normalize.css": "^8.0.0",
     "path": "^0.12.7",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.2.0",
