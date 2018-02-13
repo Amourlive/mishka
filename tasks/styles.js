@@ -18,6 +18,7 @@ const selectors = require("postcss-custom-selectors");
 const nesting = require('postcss-nesting');
 const inlineSvgCss = require('postcss-inline-svg');
 const mixins = require('postcss-mixins');
+const gcmq = require('gulp-group-css-media-queries');
 const url = require("postcss-url");
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
@@ -34,6 +35,7 @@ module.exports = function(options) {
     ,selectors()
     ,nesting()
     ,inlineSvgCss()
+    ,url()
     ,require('postcss-normalize')];
     return function () {
         return gulp.src(options.src)
@@ -47,6 +49,7 @@ module.exports = function(options) {
             }))
             .pipe(gulpif(isDevelopment, sourcemaps.init()))
             .pipe(postcss(processor))
+            .pipe(gcmq())
             .pipe(gulpif(isDevelopment, sourcemaps.write()))
             .pipe(gulpif(!isDevelopment, cssnano()))
             .pipe(gulpif(!isDevelopment, rev()))
