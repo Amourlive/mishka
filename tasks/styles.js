@@ -20,12 +20,14 @@ const inlineSvgCss = require('postcss-inline-svg');
 const mixins = require('postcss-mixins');
 const gcmq = require('gulp-group-css-media-queries');
 const url = require("postcss-url");
+const rem = require("postcss-pxtorem");
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 
 module.exports = function(options) {
     let processor= [atImport()
+    ,rem()
     ,mixins()
     ,focus()
     ,properties()
