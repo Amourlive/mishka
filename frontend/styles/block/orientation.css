@@ -1,21 +1,3 @@
-.main-title__container {
-  height: 283px;
-  box-sizing: border-box;
-  padding: 72px 36px;
-  text-align: center;
-
-  background: url(../../assets/img/hero-mobile@1x.jpg) center 20%;
-}
-
-.main-title {
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
-
-  margin: 0;
-  padding: 0;
-}
-
 .orientation-item {
   height: 103px;
   padding-left: 29px;
