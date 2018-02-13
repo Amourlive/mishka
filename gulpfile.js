@@ -47,6 +47,10 @@ lazyRequireTask('inlineSvgToHtml', './tasks/inlineSvgToHtml.js', {
     src: 'frontend/**/*.html'
 });
 
+lazyRequireTask('assets', './tasks/assets.js', {
+    src: 'frontend/assets/fonts/*.*'
+});
+
 gulp.task('watch',function () {
     gulp.watch('frontend/styles/**/*.*',['styles']);
     gulp.watch('frontend/styles/**/*.{png,jpg,svg}', ['styles:assets']);
@@ -54,6 +58,7 @@ gulp.task('watch',function () {
     gulp.watch('frontend/styles/**/icon-*.svg', ['styles:svg']);
     gulp.watch('public/styles/**/sprite.svg', ['inlineSvgToHtml']);
     gulp.watch('frontend/**/*.html', ['inlineSvgToHtml']);
+    gulp.watch('frontend/assets/fonts/*.*', ['assets']);
 });
 
 gulp.task('dev', function (callback) {
@@ -61,7 +66,7 @@ gulp.task('dev', function (callback) {
 });
 
 gulp.task('build', function (callback) {
-    run('clean', 'styles:svg', ['inlineSvgToHtml', 'styles', 'styles:assets', 'webp'], callback);
+    run('clean', 'styles:svg', ['inlineSvgToHtml', 'styles', 'styles:assets', 'webp', 'assets'], callback);
 });
 
 gulp.task('default', ['build']);
