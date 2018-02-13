@@ -17,6 +17,7 @@ const minmax = require('postcss-media-minmax');
 const selectors = require("postcss-custom-selectors");
 const nesting = require('postcss-nesting');
 const inlineSvgCss = require('postcss-inline-svg');
+const mixins = require('postcss-mixins');
 const url = require("postcss-url");
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
@@ -24,6 +25,7 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 
 module.exports = function(options) {
     let processor= [atImport()
+    ,mixins()
     ,focus()
     ,properties()
     ,autoprefixer()
