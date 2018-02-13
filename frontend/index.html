@@ -6,15 +6,16 @@
     <link href="styles/main.css" rel="stylesheet">
 </head>
 <body>
-    @@include('page/header.html')
+    @@include('block/header.html')
     <main class="page-main">
-        <h1 class="main-title visually-hidden">Store "Mishka" - The best interior for the house</h1>
+        <div class="main-title__container">
+            <h1 class="main-title">Nice handmade things for a home</h1>
+        </div>
         <section class="main-item orientation">
             <h2 class="orientation-title visually-hidden">Store Orientation</h2>
             <ul class="orientation-list">
-                <li class="orientation-item">Nice handmade things for a home</li>
-                <li class="orientation-item">Interior items</li>
-                <li class="orientation-item">Kids toys</li>
+                <li class="orientation-item"><span>Interior<br> items</span></li>
+                <li class="orientation-item"><span>Kids<br> toys</span></li>
             </ul>
         </section>
         <section class="main-item popular">
@@ -88,6 +89,6 @@
             <a class="contact-communications button" href="#">Contact Us</a>
         </section>
     </main>
-    @@include('page/footer.html')
+    @@include('block/footer.html')
 </body>
 </html>

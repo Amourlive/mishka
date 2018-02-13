@@ -10,11 +10,11 @@ const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'developm
 module.exports = function (options) {
     return function () {
         return gulp.src(options.src)
-            .pipe(newer('public'))
+            .pipe(newer('public/assets/fonts'))
             .pipe(gulpif(!isDevelopment, revReplace({
                 manifest: gulp.src('manifest/css.json', {allowEmpty: true})
             })))
-            .pipe(gulp.dest('public'));
+            .pipe(gulp.dest('public/assets/fonts'));
     };
 
 };

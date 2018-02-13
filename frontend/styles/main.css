@@ -1,4 +1,5 @@
 @import "variables.css";
 @import "scaffolding.css";
 @import "page/header.css";
+@import "page/index.css";
 @import-normalize;
