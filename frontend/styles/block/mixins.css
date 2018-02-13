@@ -1,0 +1,12 @@
+.wrapper-main {
+  width: 320px;
+  margin: 0 auto;
+  @media (--middle-viewport) {
+    width: 668px;
+    padding: 0 50px;
+  }
+  @media (--big-viewport) {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}

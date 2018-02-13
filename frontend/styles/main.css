@@ -1,5 +1,8 @@
+//common styles
 @import "variables.css";
 @import "scaffolding.css";
+
+
 @import "block/header.css";
 @import "block/index.css";
 @import-normalize;
