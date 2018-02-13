@@ -1,6 +1,21 @@
-.wrapper-main {
+@define-mixin wrapper-main {
   width: 320px;
   margin: 0 auto;
+  @media (--middle-viewport) {
+    width: 668px;
+    padding: 0 50px;
+  }
+  @media (--big-viewport) {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+@define-mixin wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+
   @media (--middle-viewport) {
     width: 668px;
     padding: 0 50px;
