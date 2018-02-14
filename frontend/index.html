@@ -6,6 +6,9 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
+    <div style="display: none">
+        @@include('../public/styles/sprite.svg')
+    </div>
     @@include('block/header.html')
     <main class="page-main">
         <div class="main-title__container">
@@ -14,8 +17,8 @@
         <section class="main-item orientation">
             <h2 class="orientation-title visually-hidden">Store Orientation</h2>
             <ul class="orientation-list">
-                <li class="orientation-item"><span>Interior items</span></li>
-                <li class="orientation-item"><span>Kids toys</span></li>
+                <li class="orientation-item"><a href="catalog.html"><span>Interior items</span></a></li>
+                <li class="orientation-item"><a href="catalog.html"><span>Kids toys</span></a></li>
             </ul>
         </section>
         <section class="main-item popular">
