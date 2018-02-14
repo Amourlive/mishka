@@ -10,12 +10,26 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+  @mixin wrapper-main;
+  @media (--mobileM-viewport) {
+    padding-top: 40px;
+  }
 }
 
 .orientation-item:nth-child(odd) {
-  background: #63d1bb;
+  background: var(--bg_main_color);
 }
 
 .orientation-item:nth-child(even) {
-  background: #56c3b2;
+  background: var(--bg_second_color);
 }
+
+.orientation-item span{
+  display: block;
+  width: 80px;
+  @media (--mobileM-viewport) {
+    width: auto;
+    font-size: 24px;
+  }
+}
+

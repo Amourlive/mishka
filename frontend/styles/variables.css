@@ -1,6 +1,8 @@
-@custom-media --small-viewport (min-width: 320px);
-@custom-media --middle-viewport (min-width: 768px);
-@custom-media --big-viewport (min-width: 1150px);
+@custom-media --mobileS-viewport (width >= 320px);
+@custom-media --mobileM-viewport (width >= 375px);
+@custom-media --middle-viewport (width >= 768px);
+@custom-media --big-viewport (width >= 1150px);
 :root {
-
+  --bg_main_color: hsl(168, 54%, 60%);
+  --bg_second_color: hsl(171, 48%, 55%);
 }
