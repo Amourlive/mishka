@@ -1,5 +1,6 @@
 @custom-media --mobileS-viewport (width >= 320px);
 @custom-media --mobileM-viewport (width >= 375px);
+@custom-media --mobileOnly-viewport (320px <= width < 768px);
 @custom-media --middle-viewport (width >= 768px);
 @custom-media --big-viewport (width >= 1150px);
 :root {
