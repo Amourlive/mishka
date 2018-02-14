@@ -21,6 +21,7 @@ const mixins = require('postcss-mixins');
 const gcmq = require('gulp-group-css-media-queries');
 const url = require("postcss-url");
 const rem = require("postcss-pxtorem");
+const flexbug = require("postcss-flexbugs-fixes");
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -38,6 +39,7 @@ module.exports = function(options) {
     ,nesting()
     ,inlineSvgCss()
     ,url()
+    ,flexbug()
     ,require('postcss-normalize')];
     return function () {
         return gulp.src(options.src)
