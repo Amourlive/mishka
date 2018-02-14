@@ -5,6 +5,11 @@
 
 /*common style blocks*/
 @import "block/header.css";
-@import "block/index.css";
+@import "block/main.css";
 @import "block/nav.css";
+
+/*index.html style blocks*/
+@import "block/orientation.css";
+
+/* normalize.css */
 @import-normalize;

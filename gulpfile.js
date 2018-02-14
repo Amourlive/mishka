@@ -16,7 +16,7 @@ function lazyRequireTask(taskName, path, options) {
     });
 }
 lazyRequireTask('styles', './tasks/styles.js', {
-    src: 'frontend/styles/main.css'
+    src: 'frontend/styles/style.css'
 });
 
 lazyRequireTask('assets', './tasks/assets.js', {
