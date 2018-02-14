@@ -4,11 +4,11 @@
 
   position: relative;
 
-  width: 320px;
+  min-width: 320px;
 }
 
 .nav-logo {
-  height: 79px;
+  min-height: 79px;
   box-sizing: border-box;
 
   padding-top: 22px;
