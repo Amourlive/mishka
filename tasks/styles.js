@@ -15,7 +15,7 @@ const focus = require('postcss-focus');
 const media = require('postcss-custom-media');
 const minmax = require('postcss-media-minmax');
 const selectors = require("postcss-custom-selectors");
-const nesting = require('postcss-nesting');
+const nested = require('postcss-nested');
 const inlineSvgCss = require('postcss-inline-svg');
 const mixins = require('postcss-mixins');
 const gcmq = require('gulp-group-css-media-queries');
@@ -36,7 +36,7 @@ module.exports = function(options) {
     ,media()
     ,minmax()
     ,selectors()
-    ,nesting()
+    ,nested()
     ,inlineSvgCss()
     ,url()
     ,flexbug()
