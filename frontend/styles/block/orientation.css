@@ -1,27 +1,24 @@
-.orientation-item {
-  height: 103px;
-  padding-left: 29px;
-  padding-top: 30px;
+.orientation-item a{
+  display: block;
+  position: relative;
 
   box-sizing: border-box;
+  min-height: 103px;
+  @mixin wrapper-main;
+
+  padding-left: 29px;
+  @media (--mobileM-viewport) {
+    padding-top: 40px;
+  }
+  padding-top: 30px;
+  margin-left: 0;
 
   color: #ffffff;
 
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
-  @mixin wrapper-main;
-  @media (--mobileM-viewport) {
-    padding-top: 40px;
-  }
-}
-
-.orientation-item:nth-child(odd) {
-  background: var(--bg_main_color);
-}
-
-.orientation-item:nth-child(even) {
-  background: var(--bg_second_color);
+  text-decoration: none;
 }
 
 .orientation-item span{
@@ -33,3 +30,22 @@
   }
 }
 
+.orientation-link {
+
+  position: relative;
+  display: block;
+  padding: 25px 30px 30px 28px;
+  box-sizing: border-box;
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  transition: 0.5s;
+
+  &_interior {
+    background-color: var(--bg_main_color);
+  }
+  &_toys {
+    background-color: var(--bg_second_color);
+  }
+}

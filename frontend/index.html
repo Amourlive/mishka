@@ -4,94 +4,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/sprite.css" rel="stylesheet">
 </head>
 <body>
-    <div style="display: none">
-        @@include('../public/styles/sprite.svg')
+<div style="display: none">
+    @@include('../public/styles/sprite.svg')
+</div>
+@@include('block/header.html')
+<main class="page-main">
+    <div class="main-title__container">
+        <h1 class="main-title">Nice handmade<br> things<br> for a home</h1>
     </div>
-    @@include('block/header.html')
-    <main class="page-main">
-        <div class="main-title__container">
-            <h1 class="main-title">Nice handmade<br> things<br> for a home</h1>
+    <section class="main-item orientation">
+        <h2 class="orientation-title visually-hidden">Store Orientation</h2>
+        <ul class="orientation-list">
+            <li class="orientation-item"><a class="orientation-link orientation-link_interior" href="catalog.html"><span>Interior items</span><svg class="orientation-icon_interior" width="41px" height="62px"><use xlink:href="#img--icon-interior"></use></svg></a></li>
+            <li class="orientation-item"><a class="orientation-link orientation-link_toys" href="catalog.html"><span>Kids toys</span><svg class="orientation-icon_toys" width="61px" height="61px"><use xlink:href="#img--icon-toy"></use></svg></a></li>
+        </ul>
+    </section>
+    <section class="main-item popular">
+        <h2 class="popular-title visually-hidden">Popular products</h2>
+        <p><b class="popular-name">Knitted baskets</b></p>
+        <p><b class="popular-marketing">The product of the week</b></p>
+        <p class="popular-description">Ecologically clean buckle, handmade. Available in six colors, and three sizes.</p>
+        <table class="popular-table features">
+            <caption class="features-title visually-hidden">Product features</caption>
+            <tr class="features-column">
+                <td class="features-cell">Color:</td><td class="features-cell">Tiffany / Gray</td>
+            </tr>
+            <tr class="features-column">
+                <td class="features-cell">Diameter:</td><td class="features-cell">25 cm</td>
+            </tr>
+            <tr class="features-column">
+                <td class="features-cell">Height:</td><td class="features-cell">15 cm</td>
+            </tr>
+        </table>
+        <img src="#" class="popular-image" alt="Models of different baskets">
+        <p><b class="popular-price">Price: 15 $</b></p>
+        <a class="popular-order button">Add to cart</a>
+    </section>
+    <section class="main-item about">
+        <h2 class="about-title">Briefly about us:</h2>
+        <ul class="about-list">
+            <li class="about-item">Environmentally friendly materials</li>
+            <li class="about-item">Scandinavian style at a bargain price</li>
+            <li class="about-item">Increases the number of likes on photos in social networks</li>
+            <li class="about-item">Made with love and joy</li>
+            <li class="about-item">Support of the domestic manufacturer</li>
+            <li class="about-item">Comes in a gift box</li>
+        </ul>
+    </section>
+    <section class="main-item reviews">
+        <h2 class="reviews-title">Reviews</h2>
+        <div class="reviews-item">
+            <p class="review-content">
+                I'm a young mother, but all the pictures did not get as many likes as the popular instamamochek. In despair, I bought accessories and toys in Mishka, and my photos immediately became more stylish, and also gain more likes!
+            </p>
+            <p><b class="reviews-author">Anastasia Krasilnikova</b></p>
+            <p><a class="reviews-mail" href="mailto:anastasia@misssskrissss">anastasia@misssskrissss</a></p>
         </div>
-        <section class="main-item orientation">
-            <h2 class="orientation-title visually-hidden">Store Orientation</h2>
-            <ul class="orientation-list">
-                <li class="orientation-item"><a href="catalog.html"><span>Interior items</span></a></li>
-                <li class="orientation-item"><a href="catalog.html"><span>Kids toys</span></a></li>
-            </ul>
-        </section>
-        <section class="main-item popular">
-            <h2 class="popular-title visually-hidden">Popular products</h2>
-            <p><b class="popular-name">Knitted baskets</b></p>
-            <p><b class="popular-marketing">The product of the week</b></p>
-            <p class="popular-description">Ecologically clean buckle, handmade. Available in six colors, and three sizes.</p>
-            <table class="popular-table features">
-                <caption class="features-title visually-hidden">Product features</caption>
-                <tr class="features-column">
-                    <td class="features-cell">Color:</td><td class="features-cell">Tiffany / Gray</td>
+        <button class="reviews-button reviews-button_up" type="button"><span class="visually-hidden">Previous review</span></button>
+        <button class="reviews-button reviews-button_down" type="button"><span class="visually-hidden">Next review</span></button>
+        <a class="reviews-add button">Write</a>
+    </section>
+    <section class="main-item contact">
+        <h2 class="contact-title">Contacts</h2>
+        <address class="contact-address address">
+            <table class="address-table">
+                <caption class="address-title visually-hidden">Contact data</caption>
+                <tr class="address-column">
+                    <td class="address-cell">e-mail:</td><td class="address-cell"><a href="mailto:info@mimimishashop.ru">info@mimimishashop.ru</a></td>
                 </tr>
-                <tr class="features-column">
-                    <td class="features-cell">Diameter:</td><td class="features-cell">25 cm</td>
-                </tr>
-                <tr class="features-column">
-                    <td class="features-cell">Height:</td><td class="features-cell">15 cm</td>
+                <tr class="address-column">
+                    <td class="address-cell">address:</td>
+                    <td class="address-cell">
+                        city of Saint Petersburg,<br>
+                        st. Great,<br>
+                        Stables,<br>
+                        19/8, office 101
+                    </td>
                 </tr>
             </table>
-            <img src="#" class="popular-image" alt="Models of different baskets">
-            <p><b class="popular-price">Price: 15 $</b></p>
-            <a class="popular-order button">Add to cart</a>
+        </address>
+        <section class="contact-map map">
+            <h3 class="map-title visually-hidden">Our address on the map</h3>
+            <img class="map-image" src="#" alt="city of Saint Petersburg, st. Great, Stables, 19/8, office 101">
         </section>
-        <section class="main-item about">
-            <h2 class="about-title">Briefly about us:</h2>
-            <ul class="about-list">
-                <li class="about-item">Environmentally friendly materials</li>
-                <li class="about-item">Scandinavian style at a bargain price</li>
-                <li class="about-item">Increases the number of likes on photos in social networks</li>
-                <li class="about-item">Made with love and joy</li>
-                <li class="about-item">Support of the domestic manufacturer</li>
-                <li class="about-item">Comes in a gift box</li>
-            </ul>
-        </section>
-        <section class="main-item reviews">
-            <h2 class="reviews-title">Reviews</h2>
-            <div class="reviews-item">
-                <p class="review-content">
-                    I'm a young mother, but all the pictures did not get as many likes as the popular instamamochek. In despair, I bought accessories and toys in Mishka, and my photos immediately became more stylish, and also gain more likes!
-                </p>
-                <p><b class="reviews-author">Anastasia Krasilnikova</b></p>
-                <p><a class="reviews-mail" href="mailto:anastasia@misssskrissss">anastasia@misssskrissss</a></p>
-            </div>
-            <button class="reviews-button reviews-button_up" type="button"><span class="visually-hidden">Previous review</span></button>
-            <button class="reviews-button reviews-button_down" type="button"><span class="visually-hidden">Next review</span></button>
-            <a class="reviews-add button">Write</a>
-        </section>
-        <section class="main-item contact">
-            <h2 class="contact-title">Contacts</h2>
-            <address class="contact-address address">
-                <table class="address-table">
-                    <caption class="address-title visually-hidden">Contact data</caption>
-                    <tr class="address-column">
-                        <td class="address-cell">e-mail:</td><td class="address-cell"><a href="mailto:info@mimimishashop.ru">info@mimimishashop.ru</a></td>
-                    </tr>
-                    <tr class="address-column">
-                        <td class="address-cell">address:</td>
-                        <td class="address-cell">
-                            city of Saint Petersburg,<br>
-                            st. Great,<br>
-                            Stables,<br>
-                            19/8, office 101
-                        </td>
-                    </tr>
-                </table>
-            </address>
-            <section class="contact-map map">
-                <h3 class="map-title visually-hidden">Our address on the map</h3>
-                <img class="map-image" src="#" alt="city of Saint Petersburg, st. Great, Stables, 19/8, office 101">
-            </section>
-            <a class="contact-communications button" href="#">Contact Us</a>
-        </section>
-    </main>
-    @@include('block/footer.html')
+        <a class="contact-communications button" href="#">Contact Us</a>
+    </section>
+</main>
+@@include('block/footer.html')
 </body>
 </html>
