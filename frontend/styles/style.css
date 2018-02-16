@@ -7,6 +7,7 @@
 @import "block/header.css";
 @import "block/main.css";
 @import "block/nav.css";
+@import "block/button.css";
 
 /*index.html style blocks*/
 @import "block/orientation.css";
