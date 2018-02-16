@@ -36,11 +36,24 @@ b{
 .popular-column {
   border-bottom: 1px solid #ececec;
 }
-.popular-cell:first-child{
-  width: 98px;
+.popular-cell:nth-child(even){
+  width: 162px;
 }
 
 .popular-cell {
   padding: 10px 0;
+}
+
+.popular-image {
+  padding-top: 26px;
+  width: 100%;
+}
+
+.popular-price {
+  display: block;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
