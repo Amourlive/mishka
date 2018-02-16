@@ -22,6 +22,7 @@ b{
 }
 
 .popular-description {
+  color: var(--second_color);
   font-size: 15px;
   font-weight: 400;
   margin-top: 20px;
@@ -30,6 +31,7 @@ b{
 
 .popular-table {
   width: 100%;
+  color: var(--second_color);
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;

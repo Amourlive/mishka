@@ -1,14 +1,20 @@
 .button {
-  display: flex;
+  display: block;
   box-sizing: border-box;
   min-width: 260px;
   max-width: 292px;
   min-height: 52px;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center;
+  text-align: center;
 
-  border: 2px solid hsl(0, 0%, 27%);
+  border: 2px solid var(--second_color);
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 14px;
+  padding-top: 14px;
+
+  color: var(--second_color);
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+
 }
