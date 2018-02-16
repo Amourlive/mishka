@@ -1,51 +1,65 @@
-.orientation-item a{
-  display: block;
-  position: relative;
-
-  box-sizing: border-box;
-  min-height: 103px;
-  @mixin wrapper-main;
-
-  padding-left: 29px;
-  @media (--mobileM-viewport) {
-    padding-top: 40px;
-  }
-  padding-top: 30px;
-  margin-left: 0;
-
-  color: #ffffff;
-
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
-  text-decoration: none;
-}
-
-.orientation-item span{
-  display: block;
-  width: 80px;
-  @media (--mobileM-viewport) {
-    width: auto;
-    font-size: 24px;
-  }
-}
-
 .orientation-link {
-
-  position: relative;
+  min-width: 320px;
+  max-width: 425px;
+  margin: 0 auto;
   display: block;
-  padding: 25px 30px 30px 28px;
+  min-height: 103px;
+  padding: 0 26px 0 28px;
   box-sizing: border-box;
   font-size: 19px;
   color: #ffffff;
   text-decoration: none;
   outline: none;
-  transition: 0.5s;
-
   &_interior {
     background-color: var(--bg_main_color);
   }
   &_toys {
     background-color: var(--bg_second_color);
   }
+  @media (--middle-viewport) {
+    min-width: 668px;
+    padding: 0 50px;
+  }
+  @media (--big-viewport) {
+    min-width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+.orientation-item span{
+  float: left;
+  margin-top: 26px;
+  @media (--mobileM-viewport) {
+    margin-top: 38px;
+    font-size: 20px;
+  }
+}
+
+@media (--mobileM-viewport) {
+  .orientation-br{
+    display: none;
+  }
+}
+
+.orientation-icon_interior,
+.orientation-icon_toys {
+  display: block;
+}
+.orientation-icon_interior {
+  margin-top: 3px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.orientation-icon_container {
+  display: inline-block;
+  float: right;
+  width:65px;
+  height:65px;
+  margin-top: 20px;
+}
+
+.orientation-icon_toys {
+  margin-left: auto;
+  margin-right: 0;
 }
