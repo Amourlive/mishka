@@ -80,21 +80,37 @@
         article h6 + p {
           margin-top: 0;
         }
-7.postcss-nesting
+7.postcss-nested
 
         Using this input.css:
-        a, b {
-          color: red;
-          & c, & d {
+        .phone {
+            &_title {
+                width: 500px;
+                @media (max-width: 500px) {
+                    width: auto;
+                }
+                body.is_dark & {
+                    color: white;
+                }
+            }
+            img {
+                display: block;
+            }
+        }
+        /* after postcss-nested */
+        .phone_title {
+            width: 500px;
+        }
+        @media (max-width: 500px) {
+            .phone_title {
+                width: auto;
+            }
+        }
+        body.is_dark .phone_title {
             color: white;
-          }
         }
-        /* after postcss-nesting */
-        a, b {
-          color: red;
-        }
-        a c, a d, b c, b d {
-          color: white;
+        .phone img {
+            display: block;
         }
 9.const inlineSvgCss = require('postcss-inline-svg');
 
