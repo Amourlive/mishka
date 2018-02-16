@@ -10,12 +10,8 @@
   color: #ffffff;
   text-decoration: none;
   outline: none;
-  &_interior {
-    background-color: var(--bg_main_color);
-  }
-  &_toys {
-    background-color: var(--bg_second_color);
-  }
+  &_interior {background-color: var(--bg_main_color);}
+  &_toys {background-color: var(--bg_second_color);}
   @media (--middle-viewport) {
     min-width: 668px;
     padding: 0 50px;
@@ -67,7 +63,5 @@
     fill: var(--orientation_icon_color);
     opacity: 0.5;
   }
-  &_interior {
-    margin-top: 3px;
-  }
+  &_interior {margin-top: 3px;}
 }
