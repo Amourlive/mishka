@@ -10,6 +10,7 @@
 
 /*index.html style blocks*/
 @import "block/orientation.css";
+@import "block/popular.css";
 
 /* normalize.css */
 @import-normalize;
