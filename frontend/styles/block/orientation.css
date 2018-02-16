@@ -41,16 +41,6 @@
   }
 }
 
-.orientation-icon_interior,
-.orientation-icon_toys {
-  display: block;
-}
-.orientation-icon_interior {
-  margin-top: 3px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .orientation-icon_container {
   display: inline-block;
   float: right;
@@ -59,7 +49,19 @@
   margin-top: 20px;
 }
 
+.orientation-icon_interior,
+.orientation-icon_toys {
+  display: block;
+}
+.orientation-icon_interior {
+  margin-top: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  fill: hsl(170, 50%, 46%);
+}
+
 .orientation-icon_toys {
   margin-left: auto;
   margin-right: 0;
+  fill: hsl(172, 52%, 44%);
 }
