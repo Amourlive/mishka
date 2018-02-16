@@ -1,0 +1,46 @@
+.popular {
+  padding-top: 28px;
+}
+
+b{
+  display: inline-block;
+}
+
+.popular-name {
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 0;
+}
+
+.popular-marketing {
+  text-transform: uppercase;
+  color: var(--main_color);
+  padding-top: 5px;
+}
+
+.popular-description {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.popular-table {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  border-collapse: collapse;
+}
+
+.popular-column {
+  border-bottom: 1px solid #ececec;
+}
+.popular-cell:first-child{
+  width: 98px;
+}
+
+.popular-cell {
+  padding: 10px 0;
+}
+
