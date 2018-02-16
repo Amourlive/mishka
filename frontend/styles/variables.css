@@ -6,4 +6,5 @@
 :root {
   --bg_main_color: hsl(168, 54%, 60%);
   --bg_second_color: hsl(171, 48%, 55%);
+  --main_color: hsl(168, 54%, 60%);
 }
