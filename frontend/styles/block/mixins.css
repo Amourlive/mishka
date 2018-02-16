@@ -16,15 +16,18 @@
   min-width: 260px;
   max-width: 365px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (--middle-viewport) {
     min-width: 668px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   @media (--big-viewport) {
     min-width: 1050px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
