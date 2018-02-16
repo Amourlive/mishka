@@ -38,8 +38,3 @@
 
   list-style: none;
 }
-
-@define-mixin svg-sprite {
-  display: inline-block;
-  fill: currentColor;
-}
