@@ -1,5 +1,8 @@
 .reviews {
   padding-top: 32px;
+  padding-bottom: 50px;
+  background: url("../../assets/img/bg-zigzag-line.svg") bottom repeat-x;
+  background-size: auto 6px;
 }
 
 .reviews-title {
@@ -51,16 +54,16 @@
   margin-top: 36px;
 }
 
-.reviews-button {
+.reviews-button{
   display: inline-block;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  flex-basis: 130px;
   height: 52px;
-  flex: 1 0 ;
   border: 1px solid var(--shadow-color);
   background-color: #ffffff;
+  flex: 1 0 130px;
+  &:focus {outline:none;}
 }
 
 .reviews-add_button {
