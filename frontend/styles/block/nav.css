@@ -14,7 +14,7 @@
   padding-top: 22px;
   text-align: center;
 
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
 }
 
 .nav-toggle {
@@ -33,7 +33,7 @@
   box-sizing: border-box;
 
   height: 79px;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
 
   padding-left: 76px;
   padding-top: 26px;
