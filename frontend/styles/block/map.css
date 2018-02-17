@@ -1,5 +1,6 @@
 .map {
   position: relative;
+  @mixin wrapper-main;
   margin-top: 42px;
 }
 .map-image {
