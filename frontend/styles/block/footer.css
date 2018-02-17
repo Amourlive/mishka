@@ -1,0 +1,35 @@
+.footer {
+  background: var(--bg_footer_color);
+  display: flex;
+  @mixin wrapper-main;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-item {
+  display: flex;
+  flex: 1 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list {
+  @mixin list-reset;
+  display: inline-flex;
+  width: 260px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social-item {
+  flex: 0 1 80px;
+}
+
+.social-link {
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+}
