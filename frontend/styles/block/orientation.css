@@ -1,3 +1,7 @@
+.orientation {
+  background: var(--bg_orientation_color);
+}
+
 .orientation-link {
   min-width: 320px;
   max-width: 425px;
