@@ -1,3 +1,7 @@
+.page-main {
+  margin-bottom: 39px;
+}
+
 .main-title__container {
   min-height: 283px;
   box-sizing: border-box;
@@ -19,4 +23,8 @@
 
 .main-item {
   @mixin wrapper;
+}
+
+.main-communications {
+  margin-top: 39px;
 }

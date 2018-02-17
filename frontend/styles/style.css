@@ -14,6 +14,7 @@
 @import "block/popular.css";
 @import "block/about.css";
 @import "block/reviews.css";
-
+@import "block/contact.css";
+@import "block/map.css";
 /* normalize.css */
 @import-normalize;
