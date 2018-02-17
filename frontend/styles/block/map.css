@@ -8,12 +8,13 @@
 }
 .map:after {
   position: absolute;
-  top: 26%;
-  right: 32%;
+  top: 25%;
+  right: 31.5%;
 
   width: 21%;
   height: 28%;
 
   background: url("../../assets/img/icon-map-pin.svg") center center no-repeat;
+  background-size: 100% auto;
   content: "";
 }
