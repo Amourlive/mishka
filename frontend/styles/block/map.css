@@ -1,7 +1,19 @@
 .map {
+  position: relative;
   margin-top: 42px;
 }
 .map-image {
   width: 100%;
   height: auto;
+}
+.map:after {
+  position: absolute;
+  top: 26%;
+  right: 32%;
+
+  width: 21%;
+  height: 28%;
+
+  background: url("../../assets/img/icon-map-pin.svg") center center no-repeat;
+  content: "";
 }
