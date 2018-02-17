@@ -13,6 +13,7 @@
 @import "block/orientation.css";
 @import "block/popular.css";
 @import "block/about.css";
+@import "block/reviews.css";
 
 /* normalize.css */
 @import-normalize;
