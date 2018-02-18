@@ -2,7 +2,7 @@
   margin-bottom: 39px;
 }
 
-.main-title__container {
+.main-title_container {
   min-height: 283px;
   box-sizing: border-box;
   padding: 72px 36px;
@@ -10,6 +10,13 @@
 
   background: url(../../assets/img/hero-mobile@1x.jpg) center -20px no-repeat,#fafafa;
   @mixin wrapper-main;
+}
+
+.main-title_wrapper {
+  padding-top: 76px;
+  padding-bottom: 74px;
+  text-align: center;
+  background-color: var(--bg_title_color);
 }
 
 .main-title {
