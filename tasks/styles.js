@@ -16,7 +16,6 @@ const media = require('postcss-custom-media');
 const minmax = require('postcss-media-minmax');
 const selectors = require("postcss-custom-selectors");
 const nested = require('postcss-nested');
-const inlineSvgCss = require('postcss-inline-svg');
 const mixins = require('postcss-mixins');
 const gcmq = require('gulp-group-css-media-queries');
 const url = require("postcss-url");
@@ -37,7 +36,6 @@ module.exports = function(options) {
     ,minmax()
     ,selectors()
     ,nested()
-    ,inlineSvgCss()
     ,url()
     ,flexbug()
     ,require('postcss-normalize')];
@@ -61,5 +59,4 @@ module.exports = function(options) {
             .pipe(gulpif(!isDevelopment, rev.manifest('css.json')))
             .pipe(gulpif(!isDevelopment, gulp.dest('manifest')))
     };
-
 };
