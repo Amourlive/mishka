@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
 }
-.map:after {
+.map::after {
   position: absolute;
   top: 25%;
   right: 31.5%;
