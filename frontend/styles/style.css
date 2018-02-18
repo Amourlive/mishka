@@ -16,5 +16,7 @@
 @import "block/reviews.css";
 @import "block/contact.css";
 @import "block/map.css";
+/*catalog.html style blocks*/
+@import "block/catalog.css";
 /* normalize.css */
 @import-normalize;
