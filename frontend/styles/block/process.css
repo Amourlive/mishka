@@ -1,0 +1,67 @@
+.process {
+  margin-top: 30px;
+}
+
+.process-container {
+  border: 1px solid var(--shadow-color);
+}
+
+.process-title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.process-title {
+  display: block;
+  margin-top: 29px;
+  margin-bottom: 29px;
+  margin-left: 20%;
+  align-items: flex-end;
+}
+
+.process-video_container {
+  position: relative;
+}
+
+.process-video {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.process-control {
+  position: absolute;
+  display: block;
+  top: 24%;
+  left: 30%;
+  width: 39%;
+  height: 52%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background: url("../../assets/img/icon-play.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.process-decryption {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.process-decryption_container {
+  margin-right: 34px;
+  margin-left: 34px;
+  margin-top: 34px;
+}
+
+.process-order {
+  margin-top: 29px;
+  margin-bottom: 33px;
+}
