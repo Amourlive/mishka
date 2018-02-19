@@ -18,5 +18,6 @@
 @import "block/map.css";
 /*catalog.html style blocks*/
 @import "block/catalog.css";
+@import "block/process.css";
 /* normalize.css */
 @import-normalize;
