@@ -1,7 +1,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  min-width: 260px;
+  min-width: 180px;
   max-width: 292px;
   min-height: 52px;
   text-align: center;
@@ -16,5 +16,4 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-
 }
