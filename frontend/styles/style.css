@@ -19,5 +19,7 @@
 /*catalog.html style blocks*/
 @import "block/catalog.css";
 @import "block/process.css";
+/*order.html style blocks*/
+@import "block/filter.css";
 /* normalize.css */
 @import-normalize;
