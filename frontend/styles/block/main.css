@@ -13,8 +13,7 @@
 }
 
 .main-title_wrapper {
-  padding-top: 76px;
-  padding-bottom: 74px;
+  padding: 76px 30px 74px 30px;
   text-align: center;
   background-color: var(--bg_title_color);
 }
@@ -34,4 +33,11 @@
 
 .main-communications {
   margin-top: 39px;
+}
+
+.main-description {
+  @mixin wrapper;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 29px;
 }
