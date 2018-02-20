@@ -11,15 +11,15 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .process-title {
   display: block;
   margin-top: 29px;
   margin-bottom: 29px;
-  margin-left: 20%;
+  margin-left: 10%;
   align-items: flex-end;
 }
 
@@ -31,7 +31,6 @@
   display: block;
   width: 100%;
   height: auto;
-
 }
 
 .process-control {
@@ -53,6 +52,13 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.process-icon {
+  display: block;
+  width: 132px;
+  height: 32px;
+  fill: var(--main_color);
 }
 
 .process-decryption_container {

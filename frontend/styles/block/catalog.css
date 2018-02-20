@@ -52,3 +52,7 @@ picture {
   margin-top: 27px;
   margin-bottom: 30px;
 }
+
+.order-icon {
+  fill: var(--main_color);
+}
