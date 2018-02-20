@@ -1,7 +1,8 @@
 .filter-field {
   display: block;
   border: none;
-  padding: 30px 0 30px 0;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0;
 }
 
@@ -18,6 +19,12 @@
 
 .radio-list, .checkbox-list, .name-list {
   @mixin list-reset;
+}
+
+.name-item, .checkbox-item, .radio-item {
+  &:first-child {
+    margin-top: 20px;
+  }
 }
 
 .radio-item, .checkbox-item{
@@ -37,16 +44,59 @@
 .radio-item:first-child {
   padding-bottom: 25px;
   &::after {
-    top: -38px;
+    top: -35px;
   }
 }
 
 .checkbox-item {
   padding-bottom: 25px;
   &:first-child::after {
-    top: -38px;
+    top: -35px;
   }
-  &:last-child {
-    padding-bottom: 0;
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 66px;
+    background-color: var(--main_color);
+    box-shadow: 0 395px 0 0 var(--main_color),0 517px 0 0 var(--main_color),0 640px 0 0 var(--main_color);
   }
+}
+
+.name-input,.phone-input,.mail-input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 34px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 2px solid black;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.extra-textarea {
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px;
+  min-height: 142px;
+  margin-top: 20px;
+}
+
+.filter-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 2px;
+}
+
+.filter-submit {
+  min-width: 260px;
 }
