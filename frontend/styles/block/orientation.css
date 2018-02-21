@@ -1,10 +1,40 @@
 .orientation {
   background: var(--bg_orientation_color);
+  position: relative;
+  @mixin wrapper-main;
+  &::after {
+    @media (--middle-viewport) {
+      background: url("../../assets/img/bg-zigzag-fill.svg") 0 100% repeat-x, transparent;
+      background-size: auto 25px;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 25px;
+      width: 100%;
+      content: "";
+    }
+  }
+}
+
+
+.orientation-list {
+  @mixin list-reset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (--middle-viewport) {
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.orientation-item {
+  flex: 1 0 320px;
 }
 
 .orientation-link {
-  min-width: 320px;
-  max-width: 425px;
   margin: 0 auto;
   display: block;
   min-height: 103px;
@@ -17,12 +47,7 @@
   &_interior {background-color: var(--bg_main_color);}
   &_toys {background-color: var(--bg_second_color);}
   @media (--middle-viewport) {
-    min-width: 668px;
-    padding: 0 50px;
-  }
-  @media (--big-viewport) {
-    min-width: 1050px;
-    padding: 0 50px;
+    min-height: 120px;
   }
 }
 
@@ -33,10 +58,6 @@
     margin-top: 38px;
     font-size: 20px;
   }
-}
-
-.orientation-list {
-  @mixin list-reset;
 }
 
 .orientation-br{
@@ -67,5 +88,7 @@
     fill: var(--orientation_icon_color);
     opacity: 0.5;
   }
-  &_interior {margin-top: 3px;}
+  &_interior {
+    margin-top: 3px;
+  }
 }
