@@ -83,6 +83,17 @@
   color: #000000;
 }
 
+.user-link {
+  position: relative;
+}
+
+.user-icon_cart, .user-icon_search {
+  position: absolute;
+  left: 12%;
+  top: 35%;
+  fill: var(--nav-icon_color);
+}
+
 @media (--mobileOnly-viewport) {
   .page-nav_closed .nav-list {
     display: none;
