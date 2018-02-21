@@ -42,8 +42,7 @@
 
 .radio-input, .checkbox-input {
   position: absolute;
-  left: -63px;
-  color: transparent;
+  left: -53px;
   outline: none;
 }
 
