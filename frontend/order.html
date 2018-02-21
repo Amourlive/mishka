@@ -27,7 +27,7 @@
                         <label class="radio-label" for="accessory">Accessories for interior</label>
                     </li>
                     <li class="radio-item">
-                        <input class="radio-input visually-hidden" type="radio" name="type" value="toy" id="toy">
+                        <input class="radio-input visually-hidden " type="radio" name="type" value="toy" id="toy">
                         <label class="radio-label" for="toy">Children's toy</label>
                     </li>
                 </ul>
@@ -66,32 +66,32 @@
                 <ul class="name-list">
                     <li class="name-item">
                         <label class="name-label" for="name-1">Name:</label>
-                        <input class="name-input" type="text" name="name" id="name-1" checked>
+                        <input class="name-input" type="text" name="name" id="name-1" placeholder="Enter your name*" required checked>
                     </li>
                     <li class="name-item">
                         <label class="name-label" for="name-2">Surname:</label>
-                        <input class="name-input" type="text" name="surname" id="name-2" checked>
+                        <input class="name-input" type="text" name="surname" id="name-2" placeholder="Enter your last name*" required checked>
                     </li>
                     <li class="name-item">
                         <label class="name-label" for="name-3">Patronymic:</label>
-                        <input class="name-input" type="text" name="patronymic" id="name-3">
+                        <input class="name-input" type="text" name="patronymic" placeholder="Middle name, if you wish." id="name-3">
                     </li>
                 </ul>
             </fieldset>
             <fieldset class="filter-field phone">
                 <legend class="filter-legend phone-title">Phone</legend>
                 <label class="phone-label visually-hidden" for="tel">Phone:</label>
-                <input class="phone-input" type="tel" name="patronymic" id="tel">
+                <input class="phone-input" type="tel" name="patronymic" placeholder="+X XXX XX XX*" required id="tel">
             </fieldset>
             <fieldset class="filter-field mail">
                 <legend class="filter-legend mail-title">E-mail</legend>
                 <label class="mail-label visually-hidden" for="email">E-mail:</label>
-                <input class="mail-input" type="email" name="patronymic" id="email">
+                <input class="mail-input" type="email" name="patronymic" placeholder="Your Email*" required id="email">
             </fieldset>
             <fieldset class="filter-field add extra">
                 <legend class="filter-legend extra-title">Addtl</legend>
                 <label class="extra-label visually-hidden" for="additional">Additional:</label>
-                <textarea class="extra-textarea" type="text" name="patronymic" id="additional"></textarea>
+                <textarea class="extra-textarea" type="text" name="patronymic" placeholder="Describe all your wishes for the order" id="additional"></textarea>
             </fieldset>
             <div class="filter-item wrapper">
                 <p class="filter-description">* Fields are required</p>
