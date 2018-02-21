@@ -5,12 +5,13 @@
 :root {
   --bg_main_color: hsl(168, 54%, 60%);
   --bg_second_color: hsl(171, 48%, 55%);
+  --bg_footer_color: hsl(0, 0%, 95%);
+  --bg_title_color: hsl(0, 0%, 95%);
+  --bg_orientation_color: hsl(0, 0%, 98%);
   --main_color: hsl(168, 54%, 60%);
   --second_color: hsl(0, 0%, 27%);
   --checkbox_radio_color: hsl(0, 0%, 27%);
   --orientation_icon_color: #149080;
   --shadow-color: #ececec;
-  --bg_footer_color: hsl(0, 0%, 95%);
-  --bg_title_color: hsl(0, 0%, 95%);
-  --bg_orientation_color: hsl(0, 0%, 98%);
+  --placeholder_color: hsl(0, 0%, 80%);
 }
