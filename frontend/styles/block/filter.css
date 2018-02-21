@@ -41,7 +41,10 @@
 }
 
 .radio-input, .checkbox-input {
-  display: none;
+  position: absolute;
+  left: -63px;
+  color: transparent;
+  outline: none;
 }
 
 .radio-label, .checkbox-label {
@@ -54,12 +57,14 @@
     width: 40px;
     height: 40px;
     border: 3px solid var(--checkbox_radio_color);
+    cursor: pointer;
+    background-color: white;
   }
 }
 
 .radio-label::before {
   border-radius: 50%;
-  box-shadow: inset 0 0 0 20px white;
+  box-shadow: inset 0 0 0 25px white;
   background-color: var(--main_color);
 }
 
