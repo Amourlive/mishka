@@ -16,7 +16,6 @@
   }
 }
 
-
 .orientation-list {
   @mixin list-reset;
   display: flex;
@@ -47,16 +46,20 @@
   &_interior {background-color: var(--bg_main_color);}
   &_toys {background-color: var(--bg_second_color);}
   @media (--middle-viewport) {
-    min-height: 120px;
+    min-height: 131px;
   }
 }
 
-.orientation-item span{
+.orientation-description{
   float: left;
   margin-top: 26px;
   @media (--mobileM-viewport) {
     margin-top: 38px;
     font-size: 20px;
+  }
+  @media (--middle-viewport) {
+    margin-top: 30px;
+    line-height: 30px;
   }
 }
 
@@ -70,14 +73,15 @@
   }
 }
 
-
-
 .orientation-icon_container {
   display: inline-block;
   float: right;
   width:65px;
   height:65px;
   margin-top: 20px;
+  @media (--middle-viewport) {
+    margin-top: 28px;
+  }
 }
 
 .orientation-icon {
