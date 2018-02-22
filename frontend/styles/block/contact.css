@@ -14,17 +14,28 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+  font-style: normal;
 }
 
-.contact-column:first-child .contact-cell{
-  padding-bottom: 20px;
+.contact-table tbody {
+  @media (--middle-viewport) {
+    display: flex;
+    flex-direction: row;
+  };
 }
 
+.contact-column {
+  @media (--middle-viewport) {
+    flex: 1 0 334px;
+  };
+  &:first-child .contact-cell {
+    padding-bottom: 20px;
+  }
+}
 .contact-cell {
   vertical-align: top;
   &:nth-child(odd) {
     padding-right: 20px;
-    width: 100%;
   }
 }
 
