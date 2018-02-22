@@ -39,3 +39,13 @@
 
   list-style: none;
 }
+
+@define-mixin visually-title {
+  @media (--middle-viewport) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (--big-viewport) {
+    font-size: 53px;
+  }
+}
