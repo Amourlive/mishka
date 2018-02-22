@@ -53,6 +53,9 @@
     text-align: left;
     padding-left: 50px;
   }
+  @media (--middle-viewport) {
+    min-height: 88px;
+  }
 }
 
 .cart {
@@ -94,7 +97,7 @@
 .nav-link, .user-link{
   display: block;
   box-sizing: border-box;
-  height: 79px;
+  min-height: 79px;
   box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
   padding-left: 24%;
   padding-top: 26px;
@@ -109,6 +112,9 @@
     padding: 0;
     justify-content: space-around;
     align-items: center;
+  }
+  @media (--middle-viewport) {
+    min-height: 88px;
   }
 }
 
