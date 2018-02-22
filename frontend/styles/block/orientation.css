@@ -5,11 +5,11 @@
   &::after {
     @media (--middle-viewport) {
       background: url("../../assets/img/bg-zigzag-fill.svg") 0 100% repeat-x, transparent;
-      background-size: auto 25px;
+      background-size: auto 26px;
       position: absolute;
       bottom: -1px;
       left: 0;
-      height: 25px;
+      height: 30px;
       width: 100%;
       content: "";
     }
