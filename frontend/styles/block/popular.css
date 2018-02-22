@@ -23,6 +23,7 @@ b{
   font-size: 25px;
   line-height: 30px;
   padding-bottom: 0;
+  @mixin visually-title;
   @media (--middle-viewport) {
     font-size: 43px;
     line-height: 50px;

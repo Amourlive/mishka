@@ -1,12 +1,9 @@
 .reviews {
-  padding-top: 32px;
-  padding-bottom: 50px;
+  padding: 32px 30px 50px 30px;
   position: relative;
   background: url("../../assets/img/bg-zigzag-line.svg") bottom repeat-x;
   background-size: auto 1%;
   max-width: 365px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
   @media (--middle-viewport) {
@@ -19,6 +16,7 @@
 .reviews-title {
   font-size: 25px;
   line-height: 30px;
+  @mixin visually-title;
   @media (--middle-viewport) {
     margin: 14px 0;
     position: absolute;

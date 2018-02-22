@@ -8,6 +8,7 @@
 .about-title {
   font-size: 25px;
   line-height: 30px;
+  @mixin visually-title;
 }
 
 .about-list {
