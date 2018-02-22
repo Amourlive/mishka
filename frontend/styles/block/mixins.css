@@ -9,7 +9,7 @@
   }
   @media (--big-viewport) {
     min-width: 1050px;
-    padding: 0 50px;
+    max-width: none;
   }
 }
 
@@ -28,8 +28,7 @@
   }
   @media (--big-viewport) {
     min-width: 1050px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: none;
   }
 }
 
