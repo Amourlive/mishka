@@ -2,7 +2,10 @@
   padding-top: 32px;
   padding-bottom: 50px;
   background: url("../../assets/img/bg-zigzag-line.svg") bottom repeat-x;
-  background-size: auto 0.8%;
+  background-size: auto 1%;
+  @media (--middle-viewport) {
+    background-size: auto 2.5%;
+  }
 }
 
 .reviews-title {
