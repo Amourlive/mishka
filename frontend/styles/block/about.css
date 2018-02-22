@@ -1,5 +1,8 @@
 .about {
   padding-top: 8px;
+  @media (--middle-viewport) {
+    padding-bottom: 82px;
+  }
 }
 
 .about-title {
