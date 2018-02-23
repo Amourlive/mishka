@@ -1,5 +1,10 @@
 .product {
   margin-top: 30px;
+  @media (--middle-viewport) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 picture {
@@ -8,17 +13,24 @@ picture {
 
 .product-container {
   border: 1px solid var(--shadow-color);
+  box-sizing: border-box;
   padding-left: 28px;
   padding-right: 28px;
+  @media (--middle-viewport) {
+    flex: 1 0 334px;
+  }
 }
 
 .product-link {
   display: block;
+  @media (--middle-viewport) {
+    flex: 1 0 334px;
+  }
 }
 
 .product-image {
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -54,5 +66,5 @@ picture {
 }
 
 .order-icon {
-  fill: var(--main_color);
+  fill: var(--placeholder_color);
 }
