@@ -7,7 +7,19 @@
   line-height: 30px;
   width: 100%;
   border-collapse: collapse;
+  position: relative;
   @mixin visually-title;
+  &::after{
+    @media (--middle-viewport) {
+      background: url("../../assets/img/icon-flag.svg") center center no-repeat;
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+    }
+  }
 }
 
 .contact-table {
