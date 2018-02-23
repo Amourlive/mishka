@@ -12,7 +12,6 @@
 
 .footer-item {
   display: flex;
-  flex: 1 0;
   justify-content: center;
   align-items: center;
   flex: 1 0 200px;
@@ -43,13 +42,12 @@
   justify-content: center;
   align-items: center;
   min-height: 80px;
+  @media (--middle-viewport) {
+    min-height: 143px;
+  }
 }
 
-.copyright {
-  flex: 1 0 200px;
-}
-
-.copyright-link {
+.copyright-link, .mishka-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +56,22 @@
   line-height: 18px;
   text-decoration: none;
   color: black;
+  @media (--middle-viewport) {
+    min-height: 143px;
+  }
+}
 
+.mishka-link {
+  display: none;
+  @media (--middle-viewport) {
+    display: flex;
+  }
 }
 
 .copyright-description {
   margin-right: 30px;
+}
+
+.copyright-icon {
+  fill: var(--main_color);
 }
