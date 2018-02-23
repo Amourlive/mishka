@@ -1,5 +1,8 @@
 .page-main {
   margin-bottom: 39px;
+  @media (--middle-viewport) {
+    margin-bottom: 55px;
+  }
 }
 
 .main-title_container {
@@ -33,6 +36,9 @@
 
 .main-communications {
   margin-top: 39px;
+  @media (--middle-viewport) {
+    margin-top: 55px;
+  }
 }
 
 .main-description {
