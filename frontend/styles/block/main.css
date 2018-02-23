@@ -19,6 +19,11 @@
   padding: 76px 30px 74px 30px;
   text-align: center;
   background-color: var(--bg_title_color);
+  @media (--middle-viewport) {
+    padding: 105px 30px 90px 30px;
+    background: url("../../assets/img/bg-zigzag-fill.svg") 0 100% repeat-x, var(--bg_title_color);
+    background-size: auto 26px;
+  }
 }
 
 .main-title {
