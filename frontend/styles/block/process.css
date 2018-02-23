@@ -36,16 +36,15 @@
 .process-control {
   position: absolute;
   display: block;
-  top: 24%;
-  left: 30%;
-  width: 39%;
-  height: 52%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   border: 0;
   outline: 0;
   background: url("../../assets/img/icon-play.svg") center center no-repeat;
-  background-size: contain;
 }
 
 .process-decryption {
