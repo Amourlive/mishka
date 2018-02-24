@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-
+  box-sizing: border-box;
   @media (--middle-viewport) {
     min-width: 668px;
     max-width: none;
