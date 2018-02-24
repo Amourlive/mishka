@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 0 200px;
+  flex: 1 0 185px;
 }
 
 .footer-item_border-bottom {
@@ -29,12 +29,15 @@
   @mixin list-reset;
   display: inline-flex;
   width: 260px;
+  box-sizing: border-box;
+  padding-left: 35px;
+  padding-right: 35px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .social-item {
-  flex: 1 0 80px;
+  flex: 1 0 40px;
 }
 
 .social-link {
@@ -61,9 +64,9 @@
   }
 }
 
-.mishka-link {
+.mishka {
   display: none;
-  @media (--middle-viewport) {
+  @media (--big-viewport) {
     display: flex;
   }
 }
