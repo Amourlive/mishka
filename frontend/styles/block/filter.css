@@ -3,6 +3,9 @@ input::placeholder, textarea::placeholder {
   font-weight: 400;
   line-height: 18px;
   color: var(--placeholder_color);
+  @media (--middle-viewport) {
+    font-size: 19px;
+  }
 }
 
 input, textarea {
@@ -11,15 +14,25 @@ input, textarea {
   line-height: 18px;
   color: black;
   outline: none;
+  @media (--middle-viewport) {
+    font-size: 19px;
+  }
 }
 
 .filter-field {
   display: block;
   position: relative;
   border: none;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
+  min-width: 260px;
+  max-width: 325px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  @media (--middle-viewport) {
+    padding-left: 217px;
+    padding-right: 50px;
+    max-width: none;
+  }
 }
 
 .filter-legend {
@@ -30,8 +43,58 @@ input, textarea {
   line-height: 16px;
   text-transform: uppercase;
   color: var(--main_color);
+  @media (--middle-viewport) {
+    position: absolute;
+    left: 50px;
+    top: 54px;
+  }
 }
 
+.checkbox-title {
+  @media (--middle-viewport) {
+    top: 64px;
+  }
+}
+
+.name-title {
+  @media (--middle-viewport) {
+    top: 70px;
+  }
+}
+
+.phone-title {
+  @media (--middle-viewport) {
+    top: 70px;
+  }
+}
+
+.mail-title {
+  @media (--middle-viewport) {
+    top: 26px;
+  }
+}
+
+.extra-title {
+  @media (--middle-viewport) {
+    top: 70px;
+  }
+}
+
+.checkbox, .radio, .name, .phone, .extra {
+  @media (--middle-viewport) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+.checkbox, .phone , .mail {
+  @media (--middle-viewport) {
+    background: var(--bg_title_color);
+    & input {
+      background: var(--bg_title_color);
+    }
+  }
+}
 
 .radio-list, .checkbox-list, .name-list {
   @mixin list-reset;
@@ -40,12 +103,43 @@ input, textarea {
 .radio-item, .checkbox-item, .name-item {
   &:first-child {
     margin-top: 20px;
+    @media (--middle-viewport) {
+      margin-top: 0;
+    }
+  }
+}
+
+.name-item {
+  @media (--middle-viewport) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.name-label {
+  @media (--middle-viewport) {
+    margin-right: 25px;
+  }
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media (--middle-viewport) {
+    padding-top: 10px;
   }
 }
 
 .radio-item, .checkbox-item{
   margin-left: 63px;
   position: relative;
+  padding-bottom: 35px;
+  @media (--middle-viewport) {
+    margin-left: 80px;
+    padding-bottom: 57px;
+  }
   &:first-child::after {
     content: "";
     position: absolute;
@@ -53,61 +147,18 @@ input, textarea {
     width: 100%;
     left: 0;
     background-color: var(--main_color);
+    @media (--middle-viewport) {
+      content: none;
+    }
   }
 }
 
-.radio-input, .checkbox-input {
-  position: absolute;
-  left: -53px;
-  outline: none;
-}
-
-.radio-label, .checkbox-label {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: -63px;
-    top: -50%;
-    width: 40px;
-    height: 40px;
-    border: 3px solid var(--checkbox_radio_color);
-    cursor: pointer;
-    background-color: white;
-  }
-}
-
-.radio-label::before {
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 25px white;
-  background-color: var(--main_color);
-}
-
-.radio-input:checked + .radio-label::before {
-  box-shadow: inset 0 0 0 11px white;
-}
-
-.checkbox-input:checked + .checkbox-label::after {
-  content: "";
-  position: absolute;
-  left: -52px;
-  width: 22px;
-  top: 10%;
-  height: 10px;
-  border-left: 3px solid var(--checkbox_radio_color);
-  border-bottom: 3px solid var(--checkbox_radio_color);
-  transform: rotate(-45deg);
-}
-
-.radio-item{
-  padding-bottom: 35px;
-  &::after {
+.radio-item::after {
     top: -35px;
-  }
 }
 
 .checkbox-item {
-  padding-bottom: 35px;
+  flex: 1 0 160px;
   &:first-child::after {
     top: -35px;
   }
@@ -120,16 +171,83 @@ input, textarea {
     top: 76px;
     background-color: var(--main_color);
     box-shadow: 0 395px 0 0 var(--main_color),0 517px 0 0 var(--main_color),0 640px 0 0 var(--main_color);
+    @media (--middle-viewport) {
+      content: none;
+    }
+  }
+}
+
+.radio-input, .checkbox-input {
+  position: absolute;
+  left: -53px;
+  outline: none;
+}
+
+.radio-label, .checkbox-label {
+  position: relative;
+  @media (--middle-viewport) {
+    font-size: 19px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -63px;
+    top: -50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--checkbox_radio_color);
+    cursor: pointer;
+    background-color: white;
+    @media (--middle-viewport) {
+      width: 52px;
+      height: 52px;
+      left: -80px;
+    }
+  }
+}
+
+.radio-label::before {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 30px white;
+  background-color: var(--main_color);
+}
+
+.checkbox-label::before {
+  @media (--middle-viewport) {
+    background: var(--bg_title_color);
+  }
+}
+
+.radio-input:checked + .radio-label::before {
+  box-shadow: inset 0 0 0 11px white;
+  @media (--middle-viewport) {
+    box-shadow: inset 0 0 0 14px white;
+  }
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: -52px;
+  width: 22px;
+  top: 10%;
+  height: 10px;
+  border-left: 2px solid var(--checkbox_radio_color);
+  border-bottom: 2px solid var(--checkbox_radio_color);
+  transform: rotate(-45deg);
+  @media (--middle-viewport) {
+    left: -68px;
+    width: 31px;
+    height: 14px;
   }
 }
 
 .name-input,.phone-input,.mail-input {
   display: block;
-  width: 100%;
-  max-width: 500px;
   padding-top: 18px;
   padding-bottom: 18px;
   margin-bottom: 34px;
+  width: 100%;
   border-right: none;
   border-left: none;
   border-top: none;
@@ -137,6 +255,15 @@ input, textarea {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+  @media (--middle-viewport) {
+    font-size: 19px;
+  }
+}
+
+.phone-input {
+  @media (--middle-viewport) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-textarea {
@@ -146,6 +273,9 @@ input, textarea {
   padding: 17px;
   min-height: 142px;
   margin-top: 20px;
+  @media (--middle-viewport) {
+    margin-top: 0;
+  }
 }
 
 .filter-description {
@@ -153,15 +283,58 @@ input, textarea {
   font-weight: 400;
   line-height: 16px;
   margin-top: 2px;
+  @media (--middle-viewport) {
+    font-size: 17px;
+  }
 }
 
 .filter-submit {
   min-width: 260px;
+  margin-top: 30px;
+  @media (--middle-viewport) {
+    margin: 0;
+    order: -1;
+  }
+}
+
+.phone-icon_container,
+.mail-icon_container{
+  text-align: center;
+  min-width: 32px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  position: absolute;
+  right: 34px;
+  top: 30px;
+  @media (--middle-viewport) {
+    right: 74px;
+  }
+}
+
+.phone-icon_container {
+  @media (--middle-viewport) {
+    top: 62px;
+  }
+}
+
+.mail-icon_container{
+  @media (--middle-viewport) {
+    top: 15px;
+  }
+}
+
+.filter-description_container {
+  @mixin wrapper;
+  @media (--middle-viewport) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 33px;
+  }
 }
 
 .phone-icon, .mail-icon {
-  position: absolute;
-  top: 35px;
-  right: 0;
+  display: inline;
   fill: var(--placeholder_color);
 }
