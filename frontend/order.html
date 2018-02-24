@@ -16,7 +16,7 @@
         <h1 class="main-title">Custom-made knitting</h1>
     </div>
     <p class="main-description">We will be happy to implement your wishes! Fill out the simple order form and we will contact you to clarify the details.</p>
-    <section class="main-item filter">
+    <section class="filter">
         <h2 class="filter-title visually-hidden">Order form</h2>
         <form class="filter-form">
             <fieldset class="filter-field radio">
@@ -82,27 +82,31 @@
                 <legend class="filter-legend phone-title">Phone</legend>
                 <label class="phone-label visually-hidden" for="tel">Phone:</label>
                 <input class="phone-input" type="tel" name="patronymic" placeholder="+X XXX XX XX*" required id="tel">
-                <svg class="phone-icon svg-img--icon-phone-dims">
-                    <use xlink:href="#img--icon-phone"></use>
-                </svg>
+                <div class="phone-icon_container">
+                    <svg class="phone-icon svg-img--icon-phone-dims">
+                        <use xlink:href="#img--icon-phone"></use>
+                    </svg>
+                </div>
             </fieldset>
             <fieldset class="filter-field mail">
                 <legend class="filter-legend mail-title">E-mail</legend>
                 <label class="mail-label visually-hidden" for="email">E-mail:</label>
                 <input class="mail-input" type="email" name="patronymic" placeholder="Your Email*" required id="email">
-                <svg class="mail-icon svg-img--icon-mail-dims">
-                    <use xlink:href="#img--icon-mail"></use>
-                </svg>
+                <div class="mail-icon_container">
+                    <svg class="mail-icon svg-img--icon-mail-dims">
+                        <use xlink:href="#img--icon-mail"></use>
+                    </svg>
+                </div>
             </fieldset>
-            <fieldset class="filter-field add extra">
+            <fieldset class="filter-field extra">
                 <legend class="filter-legend extra-title">Addtl</legend>
                 <label class="extra-label visually-hidden" for="additional">Additional:</label>
                 <textarea class="extra-textarea" type="text" name="patronymic" placeholder="Describe all your wishes for the order" id="additional"></textarea>
             </fieldset>
-            <div class="filter-item wrapper">
+            <div class="filter-description_container">
                 <p class="filter-description">* Fields are required</p>
+                <input class="filter-submit button" type="submit" value="Send an order">
             </div>
-            <input class="filter-submit button" type="submit" value="Send an order">
         </form>
     </section>
 </main>
