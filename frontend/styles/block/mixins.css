@@ -10,6 +10,7 @@
   @media (--big-viewport) {
     min-width: 1050px;
     max-width: none;
+    max-width: 1440px;
   }
 }
 
@@ -29,6 +30,9 @@
   @media (--big-viewport) {
     min-width: 1050px;
     max-width: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1440px;
   }
 }
 
