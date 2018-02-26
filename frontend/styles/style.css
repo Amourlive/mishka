@@ -21,5 +21,6 @@
 @import "block/process.css";
 /*order.html style blocks*/
 @import "block/filter.css";
+@import "block/checkbox.css";
 /* normalize.css */
 @import-normalize;
