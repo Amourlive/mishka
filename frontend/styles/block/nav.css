@@ -181,7 +181,7 @@
 .user-icon_cart, .user-icon_search {
   position: absolute;
   left: 12%;
-  top: 35%;
+  top: 40%;
   fill: var(--nav-icon_color);
   @media (--middle-viewport) {
     position: static;
