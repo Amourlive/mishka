@@ -1,5 +1,12 @@
 .process {
   margin-top: 30px;
+  margin-bottom: 58px;
+  @media (--middle-viewport) {
+    margin-top: 53px;
+  }
+  @media (--big-viewport) {
+    margin-top: 57px;
+  }
 }
 
 .process-container {
@@ -30,7 +37,7 @@
   display: block;
   margin-top: 29px;
   margin-bottom: 29px;
-  flex: 0 0 140px;
+  flex: 1 0 140px;
   @media (--middle-viewport) {
     margin-top: 43px;
     margin-bottom: 41px;
