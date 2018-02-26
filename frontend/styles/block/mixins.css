@@ -16,7 +16,7 @@
 
 @define-mixin wrapper {
   min-width: 260px;
-  max-width: 365px;
+  max-width: 385px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
