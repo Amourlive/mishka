@@ -1,7 +1,17 @@
 .map {
   position: relative;
-  @mixin wrapper-main;
   margin-top: 42px;
+  max-width: 425px;
+  margin-left:  auto;
+  margin-right:  auto;
+  @media (--middle-viewport) {
+    max-width: none;
+  }
+  @media (--big-viewport) {
+    float: right;
+    width: 50%;
+    margin: 0;
+  }
 }
 .map-image {
   width: 100%;

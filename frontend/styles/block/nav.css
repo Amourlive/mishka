@@ -7,6 +7,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  @media (--big-viewport) {
+    padding-right: 100px;
+    padding-left: 100px;
+    box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
   }
 }
 
@@ -52,10 +59,15 @@
   @media (--middle-viewport) {
     flex-grow: 2;
     text-align: left;
-    padding-left: 50px;
     padding-top: 21px;
     padding-bottom: 21px;
     min-height: 88px;
+  }
+  @media (--big-viewport) {
+    padding-left: 0;
+    text-align: center;
+    align-self: center;
+    position: absolute;
   }
 }
 
@@ -93,6 +105,28 @@
     bottom: -100%;
     left: 50px;
   }
+  @media (--big-viewport) {
+    position: static;
+    order: -1;
+    flex: 2 0 400px;
+    margin-right: 250px;
+  }
+}
+
+.nav-item {
+  @media (--big-viewport) {
+    flex: 1 0 200px;
+  }
+}
+
+.nav-link {
+  @media (--middle-viewport) {
+    box-shadow: none;
+    margin-right: 38px;
+  }
+  @media (--big-viewport) {
+    margin-right: 0;
+  }
 }
 
 .nav-link, .user-link{
@@ -113,9 +147,19 @@
     padding: 0;
     justify-content: space-around;
     align-items: center;
+    box-shadow: none;
   }
   @media (--middle-viewport) {
     min-height: 88px;
+  }
+}
+
+.user-list {
+  @media (--middle-viewport) {
+    flex-grow: 1;
+  }
+  @media (--big-viewport) {
+    flex-grow: 1.5;
   }
 }
 
@@ -146,6 +190,9 @@
     right: 50px;
     bottom: -66%;
   }
+  @media (--big-viewport) {
+    right: 100px;
+  }
 }
 
 @media (--mobileOnly-viewport) {
@@ -170,12 +217,5 @@
   }
   .user-icon_search {
     padding: 0 35px;
-  }
-  .user-list {
-    flex-grow: 1;
-  }
-  .nav-link {
-    box-shadow: none;
-    margin-right: 38px;
   }
 }

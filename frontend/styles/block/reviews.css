@@ -11,6 +11,11 @@
     padding: 0 0 85px 0;
     max-width: none;
   }
+  @media (--big-viewport) {
+    background-size: auto 23px;
+    padding-left: 100px;
+    max-width: 1440px;
+  }
 }
 
 .reviews-title {
@@ -22,6 +27,11 @@
     position: absolute;
     top: 86px;
     left: 50px;
+  }
+  @media (--big-viewport) {
+    position: absolute;
+    top: 86px;
+    left: 275px;
   }
 }
 
@@ -37,10 +47,15 @@
   @media (--middle-viewport) {
     min-width: 668px;
     max-width: none;
+    width: 100%;
     padding-bottom: 53px;
     padding-right: 50px;
     padding-left: 50px;
     background: url("../../assets/img/review@1x.jpg") left top no-repeat;
+  }
+  @media (--big-viewport) {
+    padding-left: 175px;
+    padding-right: 100px;
   }
 }
 
@@ -85,6 +100,9 @@
     bottom: 142px;
     right: 62px;
   }
+  @media (--big-viewport) {
+    right: 108px;
+  }
 }
 
 .reviews-button{
@@ -108,5 +126,8 @@
     position: absolute;
     top: 86px;
     right: 50px;
+  }
+  @media (--big-viewport) {
+    right: 100px;
   }
 }

@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 28px;
   padding-bottom: 40px;
-  background: url("../../assets/img/bg-zigzag-line.svg") bottom repeat-x;
+  background: url("../../assets/img/bg-zigzag-line.svg") left bottom repeat-x;
   background-size: auto 1%;
   &::after {
     content: "";
@@ -12,6 +12,11 @@
   @media (--middle-viewport) {
     background-size: auto 2.5%;
     padding-bottom: 52px;
+  }
+  @media (--big-viewport) {
+    background-size: auto 23px;
+    padding-top: 54px;
+    padding-bottom: 96px;
   }
 }
 
@@ -27,6 +32,12 @@ b{
   @media (--middle-viewport) {
     font-size: 43px;
     line-height: 50px;
+    width: 50%;
+  }
+  @media (--big-viewport) {
+    position: absolute;
+    top: 117px;
+    left: 275px;
   }
 }
 
@@ -39,6 +50,11 @@ b{
     float: right;
     padding: 0;
   }
+  @media (--big-viewport) {
+    position: absolute;
+    top: 117px;
+    left: 130px;
+  }
 }
 
 .popular-marketing_br {
@@ -49,18 +65,30 @@ b{
   }
 }
 
-.popular-description_container,
-.popular-price_container {
+.popular-description_container {
   box-sizing: border-box;
   @media (--middle-viewport) {
     width: 50%;
     float: left;
     padding-right: 44px;
   }
+  @media (--big-viewport) {
+    padding-left: 175px;
+    padding-top: 166px;
+  }
 }
 
-.popular-description_container {
-  margin-bottom: 15%;
+.popular-price_container {
+  @media (--middle-viewport) {
+    position: absolute;
+    bottom: 52px;
+    left: 50px;
+    min-width: 290px;
+  }
+  @media (--big-viewport) {
+    left: 275px;
+    bottom: 96px;
+  }
 }
 
 .popular-description {
@@ -69,6 +97,10 @@ b{
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 14px;
+  @media (--big-viewport) {
+    margin-top: 0;
+    margin-bottom: 57px;
+  }
 }
 
 .popular-table {
@@ -99,6 +131,9 @@ b{
     float: right;
     width: 50%;
     padding-top: 20px;
+  }
+  @media (--big-viewport) {
+    padding-top: 0;
   }
 }
 

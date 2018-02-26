@@ -1,5 +1,31 @@
 .contact {
   padding-top: 22px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @media (--big-viewport) {
+    padding-top: 0;
+    margin-top: 71px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 105px;
+    max-width: 1440px;
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.contact-container {
+  padding: 0 30px;
+  box-sizing: border-box;
+  @media (--big-viewport) {
+    float: left;
+    width: 50%;
+    padding-left: 175px;
+  }
 }
 
 .contact-title {
@@ -19,6 +45,13 @@
       width: 47px;
       height: 81px;
     }
+    @media (--big-viewport) {
+      right: initial;
+      left: -111px;
+    }
+  }
+  @media (--big-viewport) {
+    margin-top: 81px;
   }
 }
 
@@ -34,6 +67,9 @@
     display: flex;
     flex-direction: row;
   };
+  @media (--big-viewport) {
+    display: table;
+  }
 }
 
 .contact-column {
@@ -54,4 +90,28 @@
 .contact-mail {
   text-decoration: none;
   color: var(--second_color);
+}
+
+.contact-communications_container {
+  padding: 0 30px;
+  box-sizing: border-box;
+  @media (--big-viewport) {
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 275px;
+  }
+}
+
+.contact-communications {
+  margin-top: 39px;
+  margin-bottom: 39px;
+  @media (--middle-viewport) {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  @media (--big-viewport) {
+    margin: 0;
+    min-width: 230px;
+  }
 }

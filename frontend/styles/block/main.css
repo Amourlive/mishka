@@ -1,16 +1,8 @@
-.page-main {
-  margin-bottom: 39px;
-  @media (--middle-viewport) {
-    margin-bottom: 55px;
-  }
-}
-
 .main-title_container {
   min-height: 283px;
   box-sizing: border-box;
   padding: 72px 36px;
   text-align: center;
-
   background: url(../../assets/img/hero-mobile@1x.jpg) center -20px no-repeat,#fafafa;
   @mixin wrapper-main;
 }
@@ -39,13 +31,6 @@
 
 .main-item {
   @mixin wrapper;
-}
-
-.main-communications {
-  margin-top: 39px;
-  @media (--middle-viewport) {
-    margin-top: 55px;
-  }
 }
 
 .main-description {
