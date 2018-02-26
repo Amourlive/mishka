@@ -9,11 +9,12 @@
     justify-content: space-around;
     padding-right: 50px;
     padding-left: 50px;
+    box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
   }
   @media (--big-viewport) {
-    padding-right: 100px;
-    padding-left: 100px;
-    box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
+    padding: 0;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 
@@ -51,23 +52,26 @@
 .nav-logo {
   min-height: 79px;
   box-sizing: border-box;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  text-align: center;
-  align-content: left;
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
   @media (--middle-viewport) {
     flex-grow: 2;
-    text-align: left;
+    justify-content: flex-start;
     padding-top: 21px;
     padding-bottom: 21px;
     min-height: 88px;
+    box-shadow: 0 1px 0 var(--shadow-color);
   }
   @media (--big-viewport) {
     padding-left: 0;
     text-align: center;
     align-self: center;
     position: absolute;
+    box-shadow: none;
   }
 }
 
@@ -113,9 +117,12 @@
   }
 }
 
-.nav-item {
-  @media (--big-viewport) {
+.nav-item{
+  @media (--big-viewport){
     flex: 1 0 200px;
+    &:nth-child(2){
+      border-right: 1px solid var(--shadow-color);
+    }
   }
 }
 
@@ -130,24 +137,28 @@
 }
 
 .nav-link, .user-link{
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   box-sizing: border-box;
   min-height: 79px;
   box-shadow: 0 1px 0 var(--shadow-color), inset 0 1px 0 var(--shadow-color);
   padding-left: 24%;
-  padding-top: 26px;
   text-transform: none;
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 26px;
   color: #000000;
+  padding-top: 27px;
+  padding-bottom: 26px;
   @media (--middle-viewport) {
     display: flex;
-    padding: 0;
+    padding-left: 0;
     justify-content: space-around;
     align-items: center;
     box-shadow: none;
+    box-shadow: 0 1px 0 var(--shadow-color);
   }
   @media (--middle-viewport) {
     min-height: 88px;
