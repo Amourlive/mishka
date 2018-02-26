@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   @media (--middle-viewport) {
     padding-top: 10px;
+    max-width: 950px;
   }
 }
 
