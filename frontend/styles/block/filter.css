@@ -33,6 +33,9 @@ input, textarea {
     padding-right: 50px;
     max-width: none;
   }
+  @media (--big-viewport) {
+    padding-left: 225px;
+  }
 }
 
 .filter-legend {
@@ -74,11 +77,21 @@ input, textarea {
   }
 }
 
-.checkbox, .radio, .name, .phone, .extra {
+.checkbox, .name, .phone {
   @media (--middle-viewport) {
     padding-top: 50px;
     padding-bottom: 20px;
   }
+}
+
+.extra {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.radio {
+  padding-top: 14px;
+  padding-bottom: 20px;
 }
 
 .checkbox, .phone , .mail {
@@ -231,9 +244,13 @@ input, textarea {
 }
 
 .filter-submit {
-  min-width: 260px;
   margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: none;
   @media (--middle-viewport) {
+    max-width: 230px;
     margin: 0;
     order: -1;
   }
@@ -268,12 +285,17 @@ input, textarea {
 
 .filter-description_container {
   @mixin wrapper;
+  margin-top: 18px;
   margin-bottom: 55px;
   @media (--middle-viewport) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 33px;
+    margin-top: 53px;
+    margin-bottom: 50px;
+  }
+  @media (--big-viewport) {
+    padding-left: 225px;
   }
 }
 
