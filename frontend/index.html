@@ -63,7 +63,16 @@
                 </tr>
             </table>
         </div>
-        <img src="assets/img/triple-set-mobile@1x.jpg" class="popular-image" alt="Models of different baskets">
+        <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="assets/img/triple-set-desktop@1x.webp 1x, assets/img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/triple-set-tablet@1x.webp 1x, assets/img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="assets/img/triple-set-mobile@1x.webp 1x, assets/img/triple-set-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="assets/img/triple-set-desktop@1x.jpg 1x, assets/img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="assets/img/triple-set-tablet@1x.jpg 1x, assets/img/triple-set-tablet@2x.jpg 2x">
+
+            <img src="assets/img/triple-set-mobile@1x.jpg" srcset="assets/img/triple-set-mobile@2x.jpg 2x" class="popular-image" alt="Models of different baskets">
+        </picture>
         <div class="popular-price_container">
             <b class="popular-price">Price: 15 $</b>
             <a class="popular-order button">Add to cart</a>
@@ -188,7 +197,16 @@
         </div>
         <section class="map">
             <h3 class="map-title visually-hidden">Our address on the map</h3>
-            <img class="map-image" src="assets/img/map-mobile@1x.jpg" alt="city of Saint Petersburg, st. Great, Stables, 19/8, office 101">
+            <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="assets/img/map-desktop@1x.webp 1x, assets/img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/map-tablet@1x.webp 1x, assets/img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="assets/img/map-mobile@1x.webp 1x, assets/img/map-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)" srcset="assets/img/map-desktop@1x.jpg 1x, assets/img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="assets/img/map-tablet@1x.jpg 1x, assets/img/map-tablet@2x.jpg 2x">
+
+                <img class="map-image" src="assets/img/map-mobile@1x.jpg" srcset="assets/img/map-mobile@2x.jpg 2x" alt="city of Saint Petersburg, st. Great, Stables, 19/8, office 101">
+            </picture>
         </section>
         <div class="contact-communications_container">
             <a class="contact-communications button" href="#">Contact Us</a>
