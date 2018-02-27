@@ -67,11 +67,12 @@
     box-shadow: 0 1px 0 var(--shadow-color);
   }
   @media (--big-viewport) {
-    padding-left: 0;
-    text-align: center;
-    align-self: center;
+    padding: 0;
     position: absolute;
     box-shadow: none;
+    picture {
+      padding-top: 10px;
+    }
   }
 }
 
