@@ -21,11 +21,21 @@
   position: absolute;
   top: 25%;
   right: 31.5%;
-
   width: 21%;
   height: 28%;
-
   background: url("../../assets/img/icon-map-pin.svg") center center no-repeat;
   background-size: 100% auto;
   content: "";
+  @media (--middle-viewport) {
+    top: 25%;
+    right: 42.5%;
+    width: 8.5%;
+    height: 22%;
+  }
+  @media (--big-viewport) {
+    top: 25%;
+    right: 38.5%;
+    width: 13.5%;
+    height: 24%;
+  }
 }
