@@ -1,0 +1,25 @@
+.nav-logo , .nav-link {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.user-link {
+  &:hover {
+    opacity: 0.6;
+    & > svg {
+      fill: var(--main_color);
+      opacity: 1;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+    & > svg {
+      opacity: 0.3;
+    }
+  }
+}
+
