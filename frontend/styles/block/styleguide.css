@@ -1,15 +1,19 @@
-.nav-logo , .nav-link {
+* {outline: none}
+
+.nav-logo , .nav-link , .product-link_title {
   &:hover {
     opacity: 0.6;
+    transform: translate(0, -3px);
   }
   &:active {
     opacity: 0.3;
   }
 }
 
-.user-link {
+.user-link , .order-link {
   &:hover {
     opacity: 0.6;
+    transform: translate(0, -3px);
     & > svg {
       fill: var(--main_color);
       opacity: 1;
@@ -23,3 +27,132 @@
   }
 }
 
+.orientation-link {
+  &:hover {
+    transform: translate(0, -5px);
+    > span , div {
+      transform: translate(0, -5px);
+    }
+  }
+  &:active {
+    & > span , div {
+      opacity: 0.3;
+    }
+  }
+}
+
+a[href^=mailto] {
+  border-bottom: 1px solid var(--main_color);
+  &:hover {
+    color: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-item {
+  &:hover {
+    transform: scale(1.02);
+    & > .product-container {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  &:active {
+    transform: scale(0.98);
+    & > .product-container {
+      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.process-container {
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.process-control {
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
+
+.button {
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.reviews-button {
+  &:hover svg{
+    opacity: 0.6;
+  }
+  &:active svg{
+    opacity: 0.3;
+  }
+}
+
+.radio-input {
+  &:hover + .radio-label {
+    &::before {
+      border-color: var(--main_color);
+    }
+  }
+  &:active + .radio-label {
+    &::before {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+  }
+}
+
+.checkbox-input {
+  &:hover + .checkbox-label {
+    &::before {
+      border-color: var(--main_color);
+    }
+  }
+  &:active + .checkbox-label {
+    &::before {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+  }
+}
+
+.name-input,.phone-input,.mail-input, .extra-textarea {
+  &:hover {
+    border-color: var(--main_color);
+    & + div > svg {
+      fill: var(--main_color);
+    }
+  }
+  &:active{
+    border-color: var(--main_color);
+    & + div > svg {
+      fill: var(--main_color);
+    }
+  }
+}
+
+.footer-item {
+  &:hover svg{
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+    & svg{
+      fill: #46c1ae;
+    }
+  }
+}

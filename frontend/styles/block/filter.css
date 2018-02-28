@@ -176,6 +176,7 @@ input, textarea {
     border: 2px solid var(--checkbox_radio_color);
     cursor: pointer;
     background-color: white;
+    transition-duration: 0.5s;
     @media (--middle-viewport) {
       width: 52px;
       height: 52px;
@@ -185,6 +186,7 @@ input, textarea {
 }
 
 .radio-label::before {
+  transition-property: box-shadow;
   border-radius: 50%;
   box-shadow: inset 0 0 0 30px white;
   background-color: var(--main_color);
